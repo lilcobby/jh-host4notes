@@ -3,8 +3,8 @@ const app = express();
 const PORT = 3001;
 // route to html get and api post
 
-
-
+require("./htmlRoute")(app);
+require("./apiRoute")(app);
 
 // middleware to route from public file
 // middleware to parse req.body
